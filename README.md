@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Analysis of the profitability of life annuities for men based on age, duration of the insurance, and place of residence
 
 The project focuses on assessing the profitability of life annuities, which is a critical issue in financial risk management and personal planning. Life annuity is a financial product that may be especially significant in the context of an aging population and changing economic conditions. Understanding the impact of age, policy duration, and place of residence on the average profit from the insurance is crucial for insurers and insureds to develop insurance products that are both attractive and financially sustainable. The choice of this problem is justified by the need to better understand the dynamics of insurance risk and potential return on investment in life insurance. Average profit is a measure that enables the assessment of whether and to what extent an insurance policy is profitable.
