@@ -12,14 +12,10 @@ def sredni_zysk(x, n, op, type):
                 if len(columns) > 1:
                     Q.append(float(columns[1].replace(',', '.')))
         return Q + [1] * 100
-    if type=="VM":
+    if type=="V":
         Q = read_second_column("tab_men_vill.txt")
-    elif type=="CM":
-        Q = read_second_column("tab_men_city.txt")
-    elif type=="VW":
-        Q = read_second_column("tab_women_vill.txt")
     else:
-        Q = read_second_column("tab_women_city.txt")
+        Q = read_second_column("tab_men_city.txt")
 
     Qx[1] = Q[x]
     for i in range(2, n + 1):
@@ -38,16 +34,13 @@ results2 = pd.DataFrame(index=Wiek, columns=Czas)
 
 
 # Compute the results and store them in the DataFrame
-def przedzialy(p):
+def przedzialy():
     for i in Wiek:
         for j in Czas:
 
-            if p == "m":
-                sz_c = sredni_zysk(i, j, op,"CM")
-                sz_v = sredni_zysk(i, j, op, "VM")
-            else:
-                sz_c = sredni_zysk(i, j, op, "CW")
-                sz_v = sredni_zysk(i, j, op, "VW")
+            sz_c = sredni_zysk(i, j, op,"C")
+            sz_v = sredni_zysk(i, j, op, "V")
+
 
             if sz_c < -0.57:
                 przedzial_c = "duża strata"
@@ -88,10 +81,5 @@ def przedzialy(p):
     print(results)
     print(results2)
 
-print("Wyniki dla mężczyzn (miasto, wieś)")
-przedzialy("m")
-print()
-
-print("Wyniki dla kobiet (miasto, wieś)")
-przedzialy("w")
+przedzialy()
 
