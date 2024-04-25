@@ -72,9 +72,4 @@ https://pl.wikibooks.org/wiki/Matematyka_ubezpiecze%C5%84_%C5%BCyciowych/Podstaw
 Link to the LinkedIn profile
 
 https://www.linkedin.com/in/klaudia-malon-898330305/
-=======
-# life-annuities
->>>>>>> 11be3d974d2b8f8a21dd6298d47c4cd1073494f6
-=======
-# Analysis of the profitability of life annuities for men based on age, duration of the insurance, and place of residence
->>>>>>> f9cb5f53105a7730707a40d84ec5afe26c9ae7ad
+
